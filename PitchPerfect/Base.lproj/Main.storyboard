@@ -57,17 +57,17 @@
                         <outlet property="recordButton" destination="BGd-ZB-BfG" id="o0f-cl-RKE"/>
                         <outlet property="recordingLabel" destination="uFg-qO-pOy" id="ZUw-bB-kpU"/>
                         <outlet property="stopRecordingButton" destination="elc-Pv-gkJ" id="AQ8-BL-Iq7"/>
-                        <segue destination="VIL-Ds-KfN" kind="show" id="Hk1-bj-eS0"/>
+                        <segue destination="VIL-Ds-KfN" kind="show" identifier="stopRecording" id="Hk1-bj-eS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="p2G-9f-5Ep">
             <objects>
-                <viewController id="VIL-Ds-KfN" sceneMemberID="viewController">
+                <viewController id="VIL-Ds-KfN" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmA-Fo-FDG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
