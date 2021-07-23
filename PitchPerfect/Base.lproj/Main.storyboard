@@ -71,8 +71,34 @@
                     <view key="view" contentMode="scaleToFill" id="cmA-Fo-FDG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HaP-qZ-SbG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-0C-QSf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPr-JI-3Py" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="774"/>
+                                                <state key="normal" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlP-7e-vKF" userLabel="Fast Button">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="774"/>
+                                                <state key="normal" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="09P-py-X57"/>
-                        <color key="backgroundColor" red="0.66425684893629333" green="1" blue="0.99119946294703054" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="09P-py-X57" firstAttribute="bottom" secondItem="HaP-qZ-SbG" secondAttribute="bottom" id="NDD-9H-xhB"/>
+                            <constraint firstItem="09P-py-X57" firstAttribute="trailing" secondItem="HaP-qZ-SbG" secondAttribute="trailing" id="Qpo-Bp-pud"/>
+                            <constraint firstItem="HaP-qZ-SbG" firstAttribute="top" secondItem="09P-py-X57" secondAttribute="top" id="Sja-wm-qVk"/>
+                            <constraint firstItem="HaP-qZ-SbG" firstAttribute="leading" secondItem="09P-py-X57" secondAttribute="leading" id="xu4-D9-zgv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DRx-rG-ix9"/>
                 </viewController>
@@ -100,7 +126,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="90" height="90"/>
         <image name="RecordButton" width="155" height="155"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
